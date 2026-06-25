@@ -1,7 +1,132 @@
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(45, 8, 8);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/fuji.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
   font-size: 96px;
-  line-height: 144px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px 0;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  color: rgb(146, 70, 83);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+footer {
+  color: white;
+  background-image:
+    linear-gradient(rgba(39, 32, 68, 0.5), rgba(39, 32, 68, 0.6)),
+    url("../images/tokyo-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+footer > div {
+  flex: 1;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.9;
+}
+
+footer li {
+  list-style: none;
+  line-height: 30px;
+}
+
+footer li a:hover {
+  opacity: 1;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
