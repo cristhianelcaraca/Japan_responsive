@@ -56,7 +56,7 @@ header a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 .grid-2-columns {
@@ -76,15 +76,36 @@ header a {
   gap: 40px;
 }
 
+.card-header.grid img,
+.card-header.grid .embed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card {
   background-color: white;
   padding: 40px;
   text-align: justify;
   margin: 30px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-body {
   padding: 30px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: auto;
+  padding-top: 20px;
+}
+.card-header.grid {
+  grid-gap: 0;
+  height: 200px;
 }
 
 .btn {
@@ -172,6 +193,11 @@ section.secondary {
   margin: 0 auto;
 }
 
+section .grid-3-columns img {
+  height: 250px;
+  object-fit: cover;
+}
+
 footer {
   color: white;
   background-image:
@@ -251,12 +277,43 @@ footer h3 {
     grid-template-columns: 1fr;
   }
 
+  main {
+    overflow: hidden;
+  }
   main h3 {
     font-size: 28px;
   }
 
   section {
-    padding: 30px;
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .card-body {
+    padding: 15px 0 0 0;
+  }
+  .card-header.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header img {
+    display: none;
+  }
+  .card-header.grid .embed {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  section .grid-3-columns img {
+    height: 200px;
   }
 
   footer {
